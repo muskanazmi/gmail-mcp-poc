@@ -1,16 +1,16 @@
 
-# import os
-# import asyncio
-# from mcp import ClientSession, StdioServerParameters
-# from mcp.client.stdio import stdio_client
-# from langchain_mcp_adapters.tools import load_mcp_tools
-# from langchain.agents import create_agent
-# import logging
+import os
+import asyncio
+from mcp import ClientSession, StdioServerParameters
+from mcp.client.stdio import stdio_client
+from langchain_mcp_adapters.tools import load_mcp_tools
+from langchain.agents import create_agent
+import logging
 
-# logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
 
-# # Full path to MCP binary inside Docker container
-# MCP_BINARY = "/usr/local/bin/gmail-mcp-server"
+# Full path to MCP binary inside Docker container
+MCP_BINARY = "/usr/local/bin/gmail-mcp-server"
 
 # async def run_gmail_mcp(prompt: str):
 #     import logging
@@ -43,8 +43,8 @@
 
 
 
-import os
-import logging
+# import os
+# import logging
 
 async def run_gmail_mcp(prompt: str):
     logging.info("Starting Gmail MCP server subprocess")
